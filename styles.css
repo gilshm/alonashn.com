@@ -1,12 +1,9 @@
 :root {
-  --bg: #fffdf8;
+  --bg: #fbfbf9;
   --text: #222;
   --muted: #666;
-  --line: #e3ddd2;
-  --accent: #0b6b5b;
-  --coral: #c65b4a;
-  --gold: #b9821e;
-  --blue: #4267a8;
+  --line: #deded8;
+  --accent: #0b5d4d;
   --max: 1120px;
 }
 
@@ -20,9 +17,7 @@ html {
 
 body {
   margin: 0;
-  background:
-    linear-gradient(180deg, #fff7ea 0, var(--bg) 210px),
-    var(--bg);
+  background: var(--bg);
   color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -46,7 +41,7 @@ a {
 }
 
 .site-title {
-  color: var(--accent);
+  color: var(--text);
   font-weight: 700;
   text-decoration: none;
   white-space: nowrap;
@@ -66,16 +61,6 @@ nav a {
 
 nav a:hover {
   color: var(--accent);
-}
-
-.page::before {
-  display: block;
-  width: 100%;
-  height: 5px;
-  margin-bottom: 28px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, var(--accent), var(--coral), var(--gold), var(--blue));
-  content: "";
 }
 
 .page {
@@ -98,8 +83,7 @@ nav a:hover {
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: 4px;
-  border: 3px solid #fff;
-  box-shadow: 0 0 0 1px var(--line), 0 12px 30px rgba(34, 34, 34, 0.12);
+  border: 1px solid var(--line);
 }
 
 .profile-media {
@@ -116,7 +100,7 @@ h1 {
 
 .role {
   margin: 0 0 18px;
-  color: var(--coral);
+  color: var(--muted);
   font-weight: 700;
 }
 
@@ -133,23 +117,14 @@ h1 {
   justify-content: center;
   width: 36px;
   height: 36px;
-  border: 1px solid transparent;
+  border: 1px solid var(--line);
   border-radius: 50%;
-  color: #fff;
-  background: var(--accent);
-  text-decoration: none;
+  color: var(--accent);
+  background: #fff;
 }
 
 .icon-links a:hover {
-  transform: translateY(-1px);
-}
-
-.icon-links a:nth-child(2) {
-  background: var(--blue);
-}
-
-.icon-links a:nth-child(3) {
-  background: var(--coral);
+  border-color: var(--accent);
 }
 
 .icon-links svg {
@@ -172,20 +147,9 @@ h1 {
 
 h2 {
   margin: 0 0 16px;
-  color: var(--accent);
   font-size: 1.35rem;
   line-height: 1.25;
   letter-spacing: 0;
-}
-
-h2::before {
-  display: inline-block;
-  width: 0.7em;
-  height: 0.7em;
-  margin-right: 0.45em;
-  border-radius: 50%;
-  background: var(--gold);
-  content: "";
 }
 
 p {
@@ -202,7 +166,7 @@ p {
 .news-list time {
   display: inline-block;
   min-width: 76px;
-  color: var(--coral);
+  color: var(--muted);
   font-weight: 700;
 }
 
@@ -228,7 +192,6 @@ p {
 
 .pub-links a {
   margin-left: 4px;
-  color: var(--blue);
 }
 
 .background-list {
