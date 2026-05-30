@@ -194,26 +194,6 @@ p {
   margin-left: 4px;
 }
 
-.background-list {
-  display: grid;
-  gap: 14px;
-  margin: 0;
-}
-
-.background-list div {
-  display: grid;
-  grid-template-columns: 130px minmax(0, 1fr);
-  gap: 18px;
-}
-
-dt {
-  font-weight: 700;
-}
-
-dd {
-  margin: 0;
-}
-
 .footer {
   max-width: var(--max);
   margin: 0 auto;
@@ -224,8 +204,7 @@ dd {
 
 @media (max-width: 700px) {
   .site-header,
-  .intro,
-  .background-list div {
+  .intro {
     display: block;
   }
 
@@ -252,7 +231,4 @@ dd {
     white-space: normal;
   }
 
-  .background-list dt {
-    margin-bottom: 2px;
-  }
 }
