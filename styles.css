@@ -86,6 +86,10 @@ nav a:hover {
   border: 1px solid var(--line);
 }
 
+.profile-media {
+  width: 170px;
+}
+
 h1 {
   margin: 0 0 6px;
   font-size: 2rem;
@@ -102,8 +106,9 @@ h1 {
 
 .icon-links {
   display: flex;
+  justify-content: center;
   gap: 10px;
-  margin-top: 20px;
+  margin-top: 12px;
 }
 
 .icon-links a {
@@ -126,6 +131,11 @@ h1 {
   width: 20px;
   height: 20px;
   fill: currentColor;
+}
+
+.linkedin-icon svg {
+  width: 21px;
+  height: 21px;
 }
 
 .section {
@@ -224,6 +234,15 @@ dd {
   .portrait {
     width: 140px;
     margin-bottom: 18px;
+  }
+
+  .profile-media {
+    width: 140px;
+    margin-bottom: 18px;
+  }
+
+  .portrait {
+    margin-bottom: 0;
   }
 
   h1 {
