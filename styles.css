@@ -4,7 +4,7 @@
   --muted: #666;
   --line: #deded8;
   --accent: #0b5d4d;
-  --max: 920px;
+  --max: 1120px;
 }
 
 * {
@@ -72,7 +72,7 @@ nav a:hover {
 .intro {
   display: grid;
   grid-template-columns: 170px minmax(0, 1fr);
-  gap: 32px;
+  gap: 42px;
   align-items: start;
   padding-bottom: 36px;
   border-bottom: 1px solid var(--line);
@@ -133,9 +133,11 @@ h1 {
   fill: currentColor;
 }
 
-.linkedin-icon svg {
-  width: 21px;
-  height: 21px;
+.linkedin-icon span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .section {
